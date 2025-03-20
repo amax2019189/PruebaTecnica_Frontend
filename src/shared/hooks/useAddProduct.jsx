@@ -39,6 +39,7 @@ export const useDeleteProduct = () => {
                 return toast.error(response.e?.response?.data || 'Error al eliminar el producto');
             }
             window.location.reload();
+            navigate('/view');
         } catch (error) {
             setIsLoading(false);
             toast.error('Error al eliminar el producto');
