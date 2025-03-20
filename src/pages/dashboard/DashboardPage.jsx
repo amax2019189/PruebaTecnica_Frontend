@@ -18,6 +18,7 @@ export const DashboardPage = () => {
   return (
     <div className="dashboard-container">
       <Navbar />
+      <h1 className="welcome-title">¡Bienvenido a online shop!</h1>
       <Content products={products} getProducts={getProduct} />
     </div>
   );
